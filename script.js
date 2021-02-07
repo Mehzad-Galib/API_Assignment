@@ -20,7 +20,7 @@ const displayData = data => {
         foodDiv.innerHTML = `
         
                     <div class="card h-100 m-4 w-25">                      
-                        <button onclick="displayDetails('${food.strMeal}')"><img src="${food.strMealThumb}" class="card-img-top" alt="...">Details</buttons>
+                        <button onclick="displayDetails('${food.strMeal}')"><img src="${food.strMealThumb}" class="card-img-top" alt="..."></buttons>
                         <div class="card-body">
                             <h5 class="card-title">${food.strMeal}</h5>
                         </div>
