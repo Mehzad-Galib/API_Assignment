@@ -5,6 +5,12 @@ const search = () => {
     fetch(url)
         .then(response => response.json())
         .then(data => displayData(data))
+        .catch(error => displayError('Invalid Food Name!! Please Reload and try again!'));
+}
+
+const displayError = error => {
+    const errorTag = document.getElementById('error-message');
+    errorTag.innerText = error;
 }
 
 const displayData = data => {
