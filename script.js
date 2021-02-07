@@ -60,6 +60,8 @@ const renderFood = data => {
       <li>${specificMeal.strIngredient6}</li>
       <li>${specificMeal.strIngredient7}</li>
       <li>${specificMeal.strIngredient8}</li>
+      <li>${specificMeal.strIngredient9}</li>
+      <li>${specificMeal.strIngredient10}</li>
   </ul>   
     </div>
   </div>
