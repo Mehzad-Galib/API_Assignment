@@ -5,7 +5,6 @@ const search = () => {
     fetch(url)
         .then(response => response.json())
         .then(data => displayData(data))
-
 }
 
 const displayData = data => {
@@ -13,8 +12,6 @@ const displayData = data => {
     foodContainer.innerText = '';
     const meal = data.meals;
     meal.forEach(food => {
-        //'row row-cols-1 row-cols-md-3 g-4'
-        //<img src="${food.strMealThumb}" class="card-img-top" alt="...">
         const foodDiv = document.createElement('div');
         foodDiv.className = 'row row-cols-2 row-cols-md-3 g-4';
         foodDiv.innerHTML = `
@@ -57,12 +54,8 @@ const renderFood = data => {
       <li>${specificMeal.strIngredient6}</li>
       <li>${specificMeal.strIngredient7}</li>
       <li>${specificMeal.strIngredient8}</li>
-  </ul>
-      
-      
+  </ul>   
     </div>
   </div>
     `
-
-
 }
